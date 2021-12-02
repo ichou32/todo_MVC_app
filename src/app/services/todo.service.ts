@@ -33,4 +33,10 @@ export class TodoService {
     });
     this.todos$.next(updatedTodos)
   }
+
+  changeFilter(filterName : FilterEnum): void{
+    this.filter$.next(filterName);
+  }
 }
+
+

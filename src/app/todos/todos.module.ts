@@ -6,6 +6,7 @@ import { HeaderComponent } from './todos/header/header.component';
 import { MainComponent } from './todos/main/main.component';
 import { TodoService } from '../services/todo.service';
 import { TodoComponent } from './todos/todo/todo.component';
+import { FooterComponent } from './todos/footer/footer.component';
 const routes: Routes = [
     {
       path: '',
@@ -17,7 +18,9 @@ const routes: Routes = [
   declarations: [
     TodosComponent, 
     HeaderComponent, 
-    MainComponent, TodoComponent],
+    MainComponent, 
+    TodoComponent, 
+    FooterComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
